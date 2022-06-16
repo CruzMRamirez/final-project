@@ -1,12 +1,40 @@
 h1 {
-    color: blue;
-    font-family: 'Fascinate Inline', cursive;
-    font-size: 2rem;
-    font-weight: 800;
-    text-align: center;
+  color: blue;
+  font-family: "Fascinate Inline", cursive;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
 }
+
 p {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: blue;
+}
+
+a.instagram-icon {
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.email-icon {
+  font-size: 3rem;
+  color: green;
+}
+
+.google-icon {
     color: red;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+}
+
+.google-link {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
 }
