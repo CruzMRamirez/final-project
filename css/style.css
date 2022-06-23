@@ -1,40 +1,43 @@
-h1 {
-  color: blue;
-  font-family: "Fascinate Inline", cursive;
-  font-size: 2rem;
-  font-weight: 800;
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+nav {
+  background-color: #444;
+  color: #ddd;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+}
+nav ul {
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+nav ul li a.active {
+  color: orange;
+}
+header {
+  width: 100vw;
+  height: 30vh;
+  background-color: gainsboro;
+  padding-top: 20vh;
+}
+header h1 {
+  margin: 0px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
 }
-
-p {
-  color: red;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-}
-
-a {
-  color: blue;
-}
-
-a.instagram-icon {
-  background-color: orange;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  color: white;
-}
-
-.email-icon {
-  font-size: 3rem;
-  color: green;
-}
-
-.google-icon {
-    color: red;
-}
-
-.google-link {
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
+video {
+  width: 500px;
+  height: auto;
 }
