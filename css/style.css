@@ -1,39 +1,279 @@
+/* 
+  colors
+  carnival-orange #EF9F38
+  carnival-purple #817AAD
+  carnival-dark-purple #473C5A rgb(71, 60, 90)
+  carnival-background #fdfbf4
+*/
+
 body {
   margin: 0px;
+  background-color: #fdfbf4;
+  color: #473C5A;
+}
+/* Typography */
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto', sans-serif;
 }
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #EF9F38;
+  text-shadow: 2px 2px #817AAD;
+}
+p {
+  font-size: 1.5rem;
+}
+/* Navigation Menu */
 nav {
-  background-color: #444;
-  color: #ddd;
+  background-color: rgba(71, 60, 90, .8);
+  width: 100%;
   padding: 20px;
-  position: sticky;
+  position: fixed;
   top: 0px;
+  z-index: 9999;
+}
+nav a.brand {
+  font-family: 'Lobster', cursive;
+  font-weight: 100;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #EF9F38;
+  text-shadow: 2px 2px #817AAD;
+  margin: 0;
+  position: absolute;
+  top: 4px;
+  text-decoration: none;
 }
 nav ul {
   text-align: right;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-right: 20px;
 }
 nav ul li {
   display: inline;
   margin-right: 20px;
 }
 nav ul li a {
-  color: #ddd;
+  color: #817AAD;
   text-decoration: none;
 }
+nav ul li a:hover {
+  color: #EF9F38;
+}
 nav ul li a.active {
-  color: orange;
+  color: #EF9F38;
 }
+/* Header */
 header {
-  width: 100vw;
-  height: 30vh;
-  background-color: gainsboro;
-  padding-top: 20vh;
+  width: 100%;
+  height: 60vh;
+  padding-top: 30vh;
+  background-image: url(../images/witchlight_carriage.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
 }
-header h1 {
-  margin: 0px;
+header img {
+  display: block;
+  margin: auto;
+}
+/* Main Content */
+main {
+  width: 100%;
+  height: 100vh;
+  padding-top: 5vh;
+  position: relative;
+  z-index: 2;
+}
+main::before {
+  content: "";
+  width: 100%;
+  height: 10vh;
+  background-color: #fdfbf4;
+  z-index: -1;
+  position: absolute;
+  top: -50px;
+  border-radius: 150px;
+}
+
+main section h2 {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+}
+.witchlight-row .col {
+  width: 25%;
+  padding: 30px 45px;
+  min-width: 200px;
+  min-height: 100px;
+  float: left;
+  text-align: center;
+}
+.witchlight-row .col h3 {
+  margin: 5px;
+  color: #EF9F38;
+}
+.witchlight-row .col .icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #817AAD;
+}
+button {
+  background-color: #D48383;
+  border: 1px solid #D48383;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fdfbf4;
+  cursor: pointer;
+}
+button:hover {
+  background-color: transparent;
+  border: 1px solid #D48383;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #D48383;
+}
+.witchlight-row .ticket-col:hover, .fun-col:hover:hover, .monarch-col:hover{
+  padding-top: 35px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 30px -5px rgb(0, 0, 0, 75%);
+}
+.ticket-col {
+  margin-left: 2%;
+}
+/* dnd logo */
+.dnd-icon {
+  font-size: 4rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+}
+/* attractions section */
+.attractions_section {
+  height: 600px;
+  width: 100%;
+  clear: both;
+  margin-top: 55vh;
+}
+.attractions_section .col {
+  float: left;
+  height: inherit;
+  width: 30%;
+  padding: 10%;
+  padding-top: 5%;
+  padding-bottom: 0px;
+  text-align: center;
+  font-size: 2rem;
+}
+.attractions_section .col h2 {
+  color: #817AAD;
+  text-shadow: 2px 2px #EF9F38;
+}
+.attractions_section .col.attractions_bg {
+  background-image: url(../images/Ringtoss_close_up.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.attractions_section .col.attractions_bg p {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  color: #817AAD;
+  font-size: 2rem;
+  text-shadow: 2px 2px #EF9F38;
+}
+/* ticket section */
+.ticket_section {
+  background-image: url(../images/bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  clear: both;
+  padding: 5vh 0px;
+  text-align: center;
+}
+.ticket_section h2 {
+  color: #817AAD;
+  text-shadow: 2px 2px #EF9F38;
+}
+.ticket_section img {
+  width: 60%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+.ticket_section button {
+  font-size: 2rem;
+  background-color: #817AAD;
+  margin: auto;
+  margin-top: 5vh;
+}
+.ticket_section button:hover {
+  font-size: 2rem;
+  background-color: #EF9F38;
+  border: 1px solid #817AAD;
+  color: #fff;
+  margin: auto;
+  margin-top: 5vh;
+}
+/* testimonials section */
+.testimonials_section {
+  width: 100%;
+  height: 300px;
+}
+.testimonials_section .col {
+  height: inherit;
+  width: 20%;
+  margin: 2.5%;
+  float: left;
+}
+.testimonials_section .col img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+.testimonials_section .col p {
+  text-align: center;
+  color: #EF9F38;
+  position: relative;
+}
+.testimonials_section .col p::before {
+  content: "";
+  background-image: url(../images/quote_left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  color: #817AAD;
+  width: 25px;
+  height: 25px;
+}
+.testimonials_section .col p::after {
+  content: "";
+  background-image: url(../images/quote_right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -5px;
+  right: -15px;
+  width: 25px;
+  height: 25px;
+}
+/* footer */
+footer {
+  clear: both;
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/fog.png);
+  background-color: #817AAD;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
