@@ -37,3 +37,72 @@ header h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
 }
+footer {
+  background-color: gainsboro;
+}
+footer .row {
+  min-width: 300px;
+  margin: 20px;
+}
+footer .copy {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  clear: both;
+}
+/* all four columns */
+.business-column, .sitemap-column, .contact-column, .form-column {
+  float: left;
+  width: 25%; 
+  text-align: center;
+}
+/* business */
+footer .row .business-column {
+  /* background-color: orange; */
+}
+footer .row .business-column img {
+  display: block;
+  margin: auto;
+}
+/* sitemap */
+footer .row .sitemap-column {
+  /* background-color: gold; */
+}
+footer .row .sitemap-column ul{
+  list-style-type: none;
+  text-align: center;
+}
+footer .row .sitemap-column ul li {
+  margin-bottom: 20px;
+}
+footer .row .sitemap-column ul li a {
+  text-decoration: none;
+}
+/* contact */
+footer .row .contact-column {
+  /* background-color: blue; */
+}
+footer .row .contact-column ul{
+  list-style-type: none;
+  text-align: center;
+}
+footer .row .contact-column ul li {
+  margin-bottom: 20px;
+  display: inline;
+}
+footer .row .contact-column ul li a {
+  text-decoration: none;
+}
+footer .icon {
+  font-size: 2rem;
+  color: black;
+}
+/* form column */
+footer .row .form-column {
+  /* background-color: purple; */
+  text-align: center;
+}
+footer #fname , footer #lname, footer #email, footer #message {
+  width: 90%;
+}
