@@ -1,9 +1,14 @@
 /* Typography */
+.witchlight-font {
+  font-family: 'Playfair Display', serif;
+  color: #0F355B;
+  text-shadow: 2px 2px #D48383;
+  -webkit-text-stroke: 1px #E7CDA6;
+  font-weight: 800;
+}
 h1 {
   font-size: 3rem;
   text-transform: uppercase;
-  color: #EF9F38;
-  text-shadow: 2px 2px #817aad;
 }
 h2 {
   font-size: 3rem;
@@ -20,7 +25,7 @@ body {
   color: #473C5A;
   overflow-x: hidden;
 }
-button {
+a.btn {
   background-color: #D48383;
   border: 1px solid #D48383;
   border-radius: 5px;
@@ -28,16 +33,38 @@ button {
   color: #fdfbf4;
   cursor: pointer;
 }
-button:hover {
+a.btn:hover {
   background-color: transparent;
   border: 1px solid #D48383;
   border-radius: 5px;
   padding: 10px 20px;
   color: #D48383;
 }
-.row {
+section .row {
   width: 100%;
   margin: auto;
+}
+/* Nav */
+nav {
+  background-color: rgba(71, 60, 90, .8);
+}
+.offcanvas {
+  background-color: rgb(71, 60, 90);
+  text-align: center;
+}
+.navbar-nav li a.nav-link {
+  color: #817AAD;
+}
+.navbar-nav li a.active {
+  color: #EF9F38 !important;
+}
+.navbar-toggler {
+  background-color: #473C5A;
+}
+.navbar-brand {
+  font-size: 2rem;
+  text-shadow: 2px 1px #D48383;
+  -webkit-text-stroke: 1px #E7CDA6;
 }
 /* Header */
 header {
@@ -56,6 +83,11 @@ header {
 }
 .welcome-section h3 {
   color: #EF9F38;
+}
+@media only screen and (max-width: 576px) {
+  .welcome-section h1 {
+    margin: auto 15%;
+  }
 }
 .welcome-section::before {
   content: "";
@@ -87,6 +119,7 @@ header {
 .attractions-section .col-md-6:last-child {
   background-image: url(../images/Ringtoss_close_up.jpeg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   position: relative;
 }
@@ -159,7 +192,7 @@ header {
   background-position: center;
   position: absolute;
   top: -5px;
-  left: -15px;
+  left: -30px;
   color: #817AAD;
   width: 25px;
   height: 25px;
@@ -172,11 +205,32 @@ header {
   background-position: center;
   position: absolute;
   bottom: -5px;
-  right: -15px;
+  right: -25px;
   color: #817AAD;
   width: 25px;
   height: 25px;
 }
 .testimonials-section .col-md-3 {
   padding: 30px;
+}
+footer {
+  clear: both;
+  width: 100%;
+  min-height: 400px;
+  background-image: url(../images/fog_updated.png);
+  /* background-color: #817AAD; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+footer .row {
+  width: 100%;
+}
+footer .footer-text {
+  background-color: rgba( 50, 0, 100, .2);
+  color: #fff;
+  border: 1px dashed purple;
+}
+footer .copy {
+  color: #fff;
 }

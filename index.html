@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
     <title>Final Project</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@800&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Personal Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/447c326b0e.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand witchlight-font" href="#">Witchlight Carnival</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h2 class="offcanvas-title witchlight-font text-center" id="offcanvasNavbarLabel">Witchlight Carnival</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <header class="d-flex flex-row justify-content-center align-items-center">
       <img class="img-fluid" src="images/witchlight-logo-butterflies.png" alt="">
     </header>
     <section class="welcome-section py-5">
-      <h1 class="text-center mb-5">WELCOME TO THE WITCHLIGHT CARNIVAL</h1>
+      <h1 class="witchlight-font text-center mb-5">WELCOME TO THE <br> WITCHLIGHT CARNIVAL</h1>
       <div class="row justify-content-around text-center">
-        <div class="witchlight-col col-8 col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <div class="witchlight-col col-8 col-md-3 d-flex flex-column justify-content-center align-items-center mb-5">
           <i class="fa-solid fa-ticket icon"></i>
           <h3>Buy a Ticket</h3>
           <p>The magical Witchlight Carnival that comes once every 8 years is comming to a village near you! Don't miss your chance to come and see this delight with your very own eyes.</p>
-          <button>Purchase Ticket</button>
+          <a href="#" class="btn">Purchase Ticket</a>
         </div>
-        <div class="witchlight-col col-8 col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <div class="witchlight-col col-8 col-md-3 d-flex flex-column justify-content-center align-items-center mb-5">
           <i class="fa-solid fa-gift icon"></i>
           <h3>Free Gifts, Great Food, and Fantastic Games</h3>
           <p>Come and have great time at the carnival by playing games like never before, wining prizes, enjoying great food from another world, and even receiving free gifts. </p>
-          <button>See Attractions</button>
+          <a href="#" class="btn">See Attractions</a>
         </div>
-        <div class="witchlight-col col-8 col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <div class="witchlight-col col-8 col-md-3 d-flex flex-column justify-content-center align-items-center mb-5">
           <i class="fa-solid fa-crown icon"></i>
           <h3>Who Will be crowned our Witchlight Monarch</h3>
           <p>Anyone has a chance of becoming the Witchlight Monarch! Will you be the next Witchlight Monarch! Join us in the Big Top just before down to find out!</p>
-          <button>Learn More on this Event</button>
+          <a href="#" class="btn">Learn More on this Event</a>
         </div>
       </div>
     </section>
@@ -58,27 +88,41 @@
     <section class="ticket_section d-flex flex-column justify-content-center align-items-center">
       <h2>Purchase Your ticket Today!</h2>
       <img src="images/ticket.png" alt="An image of the witchlight ticket">
-      <button>Purchase Ticket</button>
+      <a href="#" class="btn">Purchase Ticket</a>
     </section>
     <section class="testimonials-section p-5">
-      <div class="row text-center">
-        <div class="col-md-3">
+      <div class="row text-center d-flex flex-row justify-content-around">
+        <div class="col-7 col-md-5 col-lg-2">
           <img class="my-3" src="images/profile1.png">
           <p>Had a blast with all my friends! If you have the chance to go, make sure to visit the Bubble-pop Teapot!</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-7 col-md-5 col-lg-2">
           <img class="my-3" src="images/profile2.png">
-          <p>Had a blast with all my friends! If you have the chance to go, make sure to visit the Bubble-pop Teapot!</p>
+          <p>Although I wasn't the Monarch, today was loads of fun! I played loads of games and won a sack of fairy dust! I wish I could go again!</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-7 col-md-5 col-lg-2">
           <img class="my-3" src="images/profile3.png">
-          <p>Had a blast with all my friends! If you have the chance to go, make sure to visit the Bubble-pop Teapot!</p>
+          <p>My sister and I had a few nightmares after riding the Mystery Mine, but besides that we had loads of fun. Though my sister lost her toy there, and hasn't smiled ever since.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-7 col-md-5 col-lg-2">
           <img class="my-3" src="images/profile4.png">
-          <p>Had a blast with all my friends! If you have the chance to go, make sure to visit the Bubble-pop Teapot!</p>
+          <p>Mr.Witch and Mr.Light are very kind owners. They crowned my son as the monarch last time we went! He was ecstatic, however recently they seem to be distant.</p>
         </div>
       </div>
     </section>
+    <footer class="d-flex flex-column justify-content-end">
+      <div class="row d-flex flex-row justify-content-around align-items-center">
+        <div class="col-8 col-md-3 text-center">
+          <img src="images/witchlight-logo.png" class="img-fluid" alt="The wild beyond the witchlight logo">
+          <p class="footer-text">The Witchlight Carnival is a fairground of kaleidoscopic tents and wagons crewed by wondrous beings, including many denizens of the Feywild. This is no ordinary carnival; it uses magic to travel from world to world across the Material Plane, visiting each world once every eight years and setting up business on the outskirts of populated areas.</p>
+        </div>
+        <div class="col-8 col-md-3"></div>
+        <div class="col-8 col-md-3"></div>
+      </div>
+      <div class="row text-center copy">
+        <p>This is not an official Wizards of the Coast website. <br> Please use the D&D logo to go to the official site.</p>
+      </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
