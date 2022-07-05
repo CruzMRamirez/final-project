@@ -28,7 +28,7 @@ header {
 }
 .attractions-text h3 {
     font-size: 2em;
-    margin: 20px;
+    margin-bottom: 20px;
     color: #E7CDA6;
 }
 .attractions:hover .attractions-text {
