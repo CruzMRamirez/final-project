@@ -1,0 +1,8 @@
+header {
+    background-image: url(../images/carnival_map.jpg);
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 55px;
+    height: 45vh;
+}

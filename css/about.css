@@ -1,0 +1,84 @@
+header {
+    background-image: url(../images/carnival_map.jpg);
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 55px;
+    height: 45vh;
+}
+/* about_section */
+.about-section .content {
+    padding: 10%;
+    padding-bottom: 5%;
+    font-size: 1.5rem;
+}
+.about-section .witchlight-about-image {
+    background-image: url(../images/witchlight_poster_highend.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+}
+@media only screen and (max-width: 992px) {
+    .about-section .witchlight-about-image {
+        min-height: 80vh;
+        margin-bottom: 10vh;
+    }
+    .about-section .content {
+        padding: 10vh 10%;
+    }
+}
+/* Employees */
+.employees-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.employees-row > div {
+    min-height: 400px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.employees-single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.employees-row > .owner {
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.employees-single-text {
+    background-color: rgba(0, 0, 0, .75);
+    padding: 20px;
+    min-height: 50%;
+    opacity: 0;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+}
+.employees-single-text h3 {
+    font-size: 2em;
+    margin: 20px;
+    color: #E7CDA6;
+}
+.employees-single hr {
+    opacity: .75;
+    border-top: 3px solid;
+}
+.employees-single:hover .employees-single-text {
+    opacity: 1;
+}
+#northwind {
+    background-position: center center;
+}
+#displacer_beast {
+    background-position: bottom center;
+}

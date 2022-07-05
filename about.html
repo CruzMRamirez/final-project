@@ -1,24 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
     <title>About</title>
-    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@800&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Personal Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/447c326b0e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand witchlight-font" href="index.html">Witchlight Carnival</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h2 class="offcanvas-title witchlight-font text-center" id="offcanvasNavbarLabel">Witchlight Carnival</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="attractions.html">Attractions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
-    <header>
-        <h1>about</h1>
+    <header class="d-flex flex-row justify-content-center align-items-center">
+      <img class="img-fluid" src="images/witchlight-logo.png" alt="">
     </header>
+    <main class="about-section mt-5">
+      <div class="row">
+        <div class="content col-lg-6 text-center d-flex flex-column justify-content-center align-items-center witchilght-about">
+          <h1 class="witchlight-font">The Witchlight Carnival</h1>
+          <p>Was it in your boot? Did you find it nestled beneath your pillow, perhaps?</p>
+          <p>What do I mean? Why, your ticket to the Witchlight Carnival, of course. Witness the spectacle that comes, but once every eight years.</p>
+          <p>Listen for the calliope and follow the wonder in your soul. Come, enter the carnival grounds, a traveling piece of the Feywild whose dazzling wagons arrive upon enormous fluttering butterfly wings. Show your ticket at the gate and partake of the carnival's myriad marvels!</p>
+          <p>The carnival offers a feast for the senses and an indulgence of dreams. Take in the talents of performers who have come to us from worlds away! Explore the Hall of Illusions, the Mystery Mine, the Pixie Kingdom and more. Try your hand at some games and win delightful prizes.</p>
+          <p>How long the carnival stays put is a mystery to everyone, but Mister Witch. When the time of departure comes, the word is given, the wagons are packed, and the festivities are borne elsewhere. Once the carnival is gone, you must wait eight years for its return.</p>
+        </div>
+        <div class="col-lg-6 witchlight-about-image">
+        </div>
+      </div>
+    </main>
+    <section class="employees mt-5 pt-5">
+      <h2 class="text-center">Meet the Crew</h2>
+      <h3 class="text-center mb-3">Owners</h3>
+      <div class="row employees-row">
+        <div class="col-8 col-md-5 col-lg-3 employees-single owner" style="background-image: url(images/mr-witch.jpeg);">
+          <div class="employees-single-text">
+            <h3>Mr. Witch</h3>
+            <hr class="m-auto mt-3 mb-3" style="width: 200px; border-top: 3px solid;">
+            <p>One half of Witchlight is the ever stern and always dapper Mister Witch. If you put an ear to his chest, we wager you'd hear the ticking of a clock, given his obsession with time and the carnival's strict adherence to schedules.</p>
+          </div>
+        </div>
+        <div class="col-8 col-md-5 col-lg-3 employees-single owner" style="background-image: url(images/mr-light.jpeg);">
+          <div class="employees-single-text">
+            <h3>Mr. Light</h3>
+            <hr class="m-auto mt-3 mb-3" style="width: 200px; border-top: 3px solid;">
+            <p>Unlike his morose partner, Mister Light lives for joy. It's infectious, really. He's always in costume, his makeup flawless. And he's constantly twirling that butterfly-topped scepter of his. Mister Light is perfectly adapted to life in the carnival.</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-center my-3">Friends</h3>
+      <div class="row employees-row">
+        <div class="col-8 col-md-5 col-lg-3 employees-single" style="background-image: url(images/burly_the_bugbear.png);">
+          <div class="employees-single-text">
+            <h3>Burly</h3>
+            <hr class="m-auto mt-3 mb-3">
+            <p>Burly and his brother, Hurly, joined the carnival as youngsters. Mister Witch and Mister Light convinced Burly and Hurly to stay with the carnival. When he’s not straining at some feat of athleticism, he’s reading books of poetry.
+            </p>
+          </div>
+        </div>
+        <div class="col-8 col-md-5 col-lg-3 employees-single" id="northwind" style="background-image: url(images/northwind.jpeg);">
+          <div class="employees-single-text">
+            <h3>Northwind</h3>
+            <hr class="m-auto mt-3 mb-3">
+            <p>
+              Northwind embodies the joys of spring, finding childlike wonder in everything from a story told by a stranger to a drop of morning dew. The sapling hails from a line of Feywild treants and travels as the Witchlight Carnival’s landscaper, laying down silk ribbons to form rivers and planting acorns that grow rapidly into splendid oak trees.
+            </p>
+          </div>
+        </div>
+        <div class="col-8 col-md-5 col-lg-3 employees-single" id="displacer_beast" style="background-image: url(images/displacer_beast.jpeg);">
+          <div class="employees-single-text">
+            <h3>Dirlagraun</h3>
+            <hr class="m-auto mt-3 mb-3">
+            <p>Dirlagraun is a gray-whiskered displacer beast that looks after stray children until they can be reunited with their parents. The keg fastened to its collar is filled with toffee apple juice and fitted with a spigot for easy pouring. The juice never fails to console an upset child.</p>
+          </div>
+        </div>
+        <div class="col-8 col-md-5 col-lg-3 employees-single" style="background-image: url(images/candlefoot.jpeg);">
+          <div class="employees-single-text">
+            <h3>Candlefoot</h3>
+            <hr class="m-auto mt-3 mb-3">
+            <p>
+              Candlefoot’s appearance is strangely monochromatic, due to the chaotic magic of a reckless sorcerer to whom he was apprenticed in his youth. After fleeing his master, Candlefoot found a home in the Witchlight Carnival.
+            </p>
+          </div>
+        </div>
+        <div class="col-8 col-md-5 col-lg-3 employees-single" style="background-image: url(images/merfolk.jpeg);">
+          <div class="employees-single-text">
+            <h3>Palasha</h3>
+            <hr class="m-auto mt-3 mb-3">
+            <p>Palasha is an elegant and operatic mermaid whose long fins billow even when she’s not underwater. She sculpts water with her extraordinary voice, creating astounding displays of aquatic magic. Palasha’s distant yet demanding nature has earned her a reputation for being haughty, but really, she’s just slow to trust.
+            </p>
+          </div>
+        </div>
+        <div class="col-8 col-md-5 col-lg-3 employees-single" style="background-image: url(images/witchlight-hands.jpeg);">
+          <div class="employees-single-text">
+            <h3>Witchlight Hands</h3>
+            <hr class="m-auto mt-3 mb-3">
+            <p>These are the backbone of the Witchlight Carnival, a motley collection of individuals who operate many of the booths, make repairs, feed and exercise the animals, keep an eye out for thieves and other miscreants, and perform other miscellaneous tasks as Mister Witch dictates. A few also work part-time as performers and attractions. Although they travel to many worlds throughout the Material Plane, Witchlight hands rarely leave the carnival grounds. The carnival is the only world they know and care about.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-end">
+      <div class="row d-flex flex-row justify-content-around align-items-center">
+        <div class="col-8 col-md-3 text-center">
+          <img src="images/witchlight-logo.png" class="img-fluid" alt="The wild beyond the witchlight logo">
+          <p class="footer-text">The Witchlight Carnival is a fairground of kaleidoscopic tents and wagons crewed by wondrous beings, including many denizens of the Feywild. This is no ordinary carnival; it uses magic to travel from world to world across the Material Plane, visiting each world once every eight years and setting up business on the outskirts of populated areas.</p>
+        </div>
+        <div class="col-8 col-md-3"></div>
+        <div class="col-8 col-md-3"></div>
+      </div>
+      <div class="row text-center copy">
+        <p>This is not an official Wizards of the Coast website. <br> Please use the D&D logo to go to the official site.</p>
+      </div>
+    </footer>
+    <div class="dnd-logo">
+      <a href="https://dnd.wizards.com/products/wild-beyond-witchlight">
+        <i class="fa-brands fa-d-and-d"></i>
+      </a>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

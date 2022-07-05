@@ -19,7 +19,7 @@
   <body>
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand witchlight-font" href="#">Witchlight Carnival</a>
+        <a class="navbar-brand witchlight-font" href="index.html">Witchlight Carnival</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,7 +31,10 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contact.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="attractions.html">Attractions</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -44,8 +47,7 @@
         </div>
       </div>
     </nav>
-
-    <header class="d-flex flex-row justify-content-center align-items-center">
+    <header class="d-flex flex-row justify-content-center align-items-center hero">
       <img class="img-fluid" src="images/witchlight-logo-butterflies.png" alt="">
     </header>
     <section class="welcome-section py-5">
@@ -55,19 +57,19 @@
           <i class="fa-solid fa-ticket icon"></i>
           <h3>Buy a Ticket</h3>
           <p>The magical Witchlight Carnival that comes once every 8 years is comming to a village near you! Don't miss your chance to come and see this delight with your very own eyes.</p>
-          <a href="#" class="btn">Purchase Ticket</a>
+          <a href="https://dnd.wizards.com/products/wild-beyond-witchlight" target="_blank" class="btn">Purchase Ticket</a>
         </div>
         <div class="witchlight-col col-8 col-md-3 d-flex flex-column justify-content-center align-items-center mb-5">
           <i class="fa-solid fa-gift icon"></i>
           <h3>Free Gifts, Great Food, and Fantastic Games</h3>
           <p>Come and have great time at the carnival by playing games like never before, wining prizes, enjoying great food from another world, and even receiving free gifts. </p>
-          <a href="#" class="btn">See Attractions</a>
+          <a href="attractions.html" class="btn">See Attractions</a>
         </div>
         <div class="witchlight-col col-8 col-md-3 d-flex flex-column justify-content-center align-items-center mb-5">
           <i class="fa-solid fa-crown icon"></i>
           <h3>Who Will be crowned our Witchlight Monarch</h3>
           <p>Anyone has a chance of becoming the Witchlight Monarch! Will you be the next Witchlight Monarch! Join us in the Big Top just before down to find out!</p>
-          <a href="#" class="btn">Learn More on this Event</a>
+          <a href="attractions.html" class="btn">Learn More on this Event</a>
         </div>
       </div>
     </section>
@@ -78,7 +80,8 @@
         </div>
         <div class="content col-md-6 text-center d-flex flex-column justify-content-center align-items-center">
           <h2>Come, Play, and Have Fun</h2>
-          <p>Come explore a world like never before. Creatures from distant lands, food from other worlds, and acts not seen anywhere else. Have you ever wanted to see a merfolk, cockatrice, or perhaps a displacer beast? No? Perhaps a game of ringtoss with an Almiraj will do the trick! There's plenty of games for every type of person! Hope to see you there soon!</p>
+          <p class="my-5">Come explore a world like never before. Creatures from distant lands, food from other worlds, and acts not seen anywhere else. Have you ever wanted to see a merfolk, cockatrice, or perhaps a displacer beast? No? Perhaps a game of ringtoss with an Almiraj will do the trick! There's plenty of games for every type of person! Hope to see you there soon!</p>
+          <a href="attractions.html" class="btn">See Attractions</a>
         </div>
         <div class="col-md-6">
           <p>Almiraj</p>
@@ -88,7 +91,7 @@
     <section class="ticket_section d-flex flex-column justify-content-center align-items-center">
       <h2>Purchase Your ticket Today!</h2>
       <img src="images/ticket.png" alt="An image of the witchlight ticket">
-      <a href="#" class="btn">Purchase Ticket</a>
+      <a href="https://dnd.wizards.com/products/wild-beyond-witchlight" target="_blank" class="btn">Purchase Ticket</a>
     </section>
     <section class="testimonials-section p-5">
       <div class="row text-center d-flex flex-row justify-content-around">
@@ -123,6 +126,11 @@
         <p>This is not an official Wizards of the Coast website. <br> Please use the D&D logo to go to the official site.</p>
       </div>
     </footer>
+    <div class="dnd-logo">
+      <a href="https://dnd.wizards.com/products/wild-beyond-witchlight">
+        <i class="fa-brands fa-d-and-d"></i>
+      </a>
+    </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

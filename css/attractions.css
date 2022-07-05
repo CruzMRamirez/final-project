@@ -1,0 +1,36 @@
+header {
+    background-image: url(../images/carnival_map.jpg);
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.attractions {
+    background-color: transparent;
+    min-height: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+.attractions-text {
+    background-color: rgba(0, 0, 0, .75);
+    padding: 20px;
+    min-height: 50%;
+    opacity: 0;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+}
+.attractions-text h3 {
+    font-size: 2em;
+    margin: 20px;
+    color: #E7CDA6;
+}
+.attractions:hover .attractions-text {
+    opacity: 1;
+}
