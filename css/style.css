@@ -66,6 +66,7 @@ nav {
   font-size: 2rem;
   text-shadow: 2px 1px #D48383;
   -webkit-text-stroke: 1px #E7CDA6;
+  margin-right: 0;
 }
 /* Header */
 header.hero {
