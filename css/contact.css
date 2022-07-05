@@ -23,6 +23,11 @@ header {
 .contact-section input.btn {
     margin-top: 20px;
 }
+@media only screen and (max-width: 768px) {
+    form .col-6 {
+        width: 100%;
+    }
+}
 /* Modal */
 .modal-map-button img{
     border-radius: 20px;
