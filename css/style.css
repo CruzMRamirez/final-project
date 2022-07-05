@@ -25,7 +25,7 @@ body {
   color: #473C5A;
   overflow-x: hidden;
 }
-a.btn {
+.btn {
   background-color: #D48383;
   border: 1px solid #D48383;
   border-radius: 5px;
@@ -33,7 +33,7 @@ a.btn {
   color: #fdfbf4;
   cursor: pointer;
 }
-a.btn:hover {
+.btn:hover {
   background-color: transparent;
   border: 1px solid #D48383;
   border-radius: 5px;
